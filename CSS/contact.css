@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+.header {
+    background: #87509c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header img {
+    margin: 0 10%;
+    width: 122px;
+    height: 45px;
+}
+.header_navigation ul {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.header_navigation li {
+    display: inline-block;
+    padding: 15px;
+    color: #ffffff;
+}
+.header_navigation li:hover {
+    transform: scale(1.1);
+    background: #643a79;
+    border-radius: 10px;
+    transition: background-color, transform 0.5s ease;
+}
+.contact {
+    background: #17c2a4;
+}
+.contact_wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 10%;
+}
+.contact_info {
+    width: 372px;
+    font-size: 20px;
+}
+.contact_info h2 {
+    font-size: 40px;
+}
+.contact_info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.slash {
+    width: 87px;
+    height: 4px;
+    background-color: #000000;
+    opacity: 0.15;
+    margin: 10px auto 30px;
+}
+.contact h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 37.91px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 0;
+    padding: 5% 5% 2% 5%;
+}
+.contact_form {
+    width: 670px;
+    margin-top: 50px;
+    color: black;
+}
+.contact_form input {
+    background: #5bd6c0;
+    border: none;
+    color: black;
+}
+.contact_form input:focus, textarea:focus {
+    border: 3px solid #87509c;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+input[name="yourname"], input[name="yourE-mail"] {
+    width: 321px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Titillium Web', sans-serif;
+}
+input[name="yourtitle"] {
+    width: 670px;
+    height: 48px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+form textarea {
+    width: 670px;
+    height: 170px;
+    background: #5bd6c0;
+    border: none;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+input::-moz-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+::-ms-input-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+textarea::-webkit-input-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+textarea:-moz-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+textarea:-ms-input-placeholder {
+    color: #000000;
+    font-size: 20px;
+    padding: 5px;
+    font-family: 'Titillium Web', sans-serif;
+}
+:focus::-webkit-input-placeholder {
+     color: transparent;
+}
+:focus::-ms-input-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder{
+    color: transparent;
+}
+form button {
+    width: 180px;
+    height: 54px;
+    border-radius: 10px;
+    background-color: #d56e00;
+    border: none;
+    font-size: 12px;
+    color: white;
+    margin: 30px auto;
+    letter-spacing: 1.2px;
+}
+form button:hover {
+    background-color: orange;
+
+}
+.contact_map{
+    position: relative;
+    height: 300px;
+}
+.contact_map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.footer {
+    background: #87509c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer p {
+    margin: unset;
+    padding: 28px;
+    color: white;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer li {
+    display: inline-block;
+    margin: 10px;
+}
+@media screen and (max-width:1320px){
+    .contact_info {
+        width: 100%;
+    }
+    .contact_form {
+        margin: 30px auto;
+    }
+}
+@media screen and (max-width:840px) {
+    .contact_form {
+        width: 100%;
+    }
+}
+@media all and (max-width: 800px){
+    .header {
+        flex-direction: column;
+    }
+    .header_navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .header img {
+        margin-top: 30px;
+    }
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer ul {
+        padding: 0;
+    }
+
+}

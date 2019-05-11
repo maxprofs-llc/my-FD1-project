@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+.header {
+    background: #87509c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img {
+    margin: 0 10%;
+    width: 122px;
+    height: 45px;
+}
+.header_navigation ul {
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.header_navigation li {
+    display: inline-block;
+    padding: 15px;
+    color: #ffffff;
+}
+.header_navigation li:hover {
+    transform: scale(1.1);
+    background: #643a79;
+    border-radius: 10px;
+    transition: background-color, transform 0.5s ease;
+}
+.slash {
+    width: 87px;
+    height: 4px;
+    background-color: #000000;
+    opacity: 0.15;
+    margin: 10px auto 30px;
+}
+h2.meet {
+    color: #3c4761;
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 40.87px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5% 5% 2% 5%;
+
+}
+.work_text {
+    color: #3c4761;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 26.84px;
+    letter-spacing: 0.36px;
+    text-align: center;
+    padding: 0% 30% ;
+}
+.work {
+    background-color: #e7f1f8;
+}
+.name {
+    width: 200px;
+    margin: 75px;
+}
+.contact_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.anne_img, .kate_img, .olivia_img, .ashlee_img,
+.angelina_img, .jennifer_img, .scarlett_img, .sharliz_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.name h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.48px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.name p:first-of-type {
+    color: #30bae7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.32px;
+    text-align: center;
+}
+.name p {
+    color: #3c4761;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.name ul {
+    list-style-type: none;
+    padding: 0px 30px;
+}
+.name li {
+    display: inline-block;
+    text-align: center;
+}
+.anne_img {
+    background: url("../images/anne.jpg");
+}
+.kate_img {
+    background: url("../images/kate.jpg");
+}
+.olivia_img {
+    background: url("../images/olivia.jpg");
+}
+.ashlee_img {
+    background: url("../images/ashley.jpg") ;
+}
+.angelina_img {
+    background: url("../images/angelina.jpg");
+}
+.jennifer_img {
+    background: url("../images/jenifer.jpg");
+}
+.scarlett_img {
+    background: url("../images/scarlett.jpg");
+}
+.sharliz_img {
+    background: url("../images/sharliz.jpg");
+}
+.footer {
+    background: #87509c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer p {
+    margin: unset;
+    padding: 28px;
+    color: white;
+}
+.footer ul {
+    list-style-type: none;
+}
+.footer li {
+    display: inline-block;
+    margin: 10px;
+}
+@media all and (max-width: 800px){
+    .header {
+        flex-direction: column;
+    }
+    .header_navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .header img {
+        margin-top: 30px;
+    }
+    .footer {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer ul {
+        padding: 0;
+    }
+
+}
